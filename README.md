@@ -1,17 +1,14 @@
-/**
- * Readme file for the course-quick-access block.
- *
- * @package    block_course_quick_access
- * @copyright  2012 Thomas Heinz <mail@th1z.net>
- * @webseite   http://www.th1z.net/projects/moodle-cqa/
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
 
-moodle-course-quick-access
-==========================
+Readme file for the course-quick-access block
+=============================================
 
 A plugin for the learning management system moodle to provide individual 
 course assortment for its users.
+
+@package    block_course_quick_access
+@copyright  2012 Thomas Heinz <mail@th1z.net>
+@webseite   http://www.th1z.net/projects/moodle-cqa/
+@license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
 
 
 Description
@@ -35,7 +32,11 @@ Installation
 - Copy the "course_quick_access" folder into the "moodle/blocks" directory
 - Visit your moodle site in a browser, logged in as an administrator.
 - Go to "Site Administration > Notifications > Continue"
-- DONE
+- Add the "course-quick-access"/"Kursschnellzugriff" block to the desired
+moodle sites. 
+- I would reccommend to configure the block to be displayed on all 
+moodle-contextes. 
+- Done
 
 Note: During installation two tables ("block_qacategory" & 
 "block_qacategory_course") will be created in the moodle database.

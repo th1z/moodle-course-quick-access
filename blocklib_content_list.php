@@ -137,7 +137,7 @@ function get_categorised_courses($userid, $catid, $visible=true) {
     global $DB;
     // Query the DB courses that the user is enrolled in, and have are 
     // assigned to the given user-category
-    $query = 'SELECT * FROM '.MOODLE_DB_PREFIX.PLUGIN_DB_TABLE_COURSETOCAT. 
+    $query = 'SELECT '.MOODLE_DB_PREFIX.'course.id, visible, shortname, fullname FROM '.MOODLE_DB_PREFIX.PLUGIN_DB_TABLE_COURSETOCAT.
     ', '.MOODLE_DB_PREFIX.MOODLE_DB_TABLE_COURSE.
     ' WHERE ' . MOODLE_DB_PREFIX.PLUGIN_DB_TABLE_COURSETOCAT.'.userid = ?'.
     ' AND '.MOODLE_DB_PREFIX.PLUGIN_DB_TABLE_COURSETOCAT.'.catid = ?'.
